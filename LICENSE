@@ -672,3 +672,15 @@ may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <https://www.gnu.org/licenses/why-not-lgpl.html>.
+
+---
+
+### Non-Commercial Use
+
+You may use, modify, and distribute this software for **non-commercial purposes only**. Commercial use, including but not limited to selling, renting, sublicensing, or using the software in any for-profit service, is **not permitted** without express written permission from the original copyright holder.
+
+If you wish to use the software for commercial purposes, please contact the copyright holder, to negotiate a separate commercial license.
+
+### Attribution
+
+If you distribute or modify the software (or any derivative works), you must give appropriate credit to the original author(s) and provide a clear notice of any changes made. You must also include a copy of this license with the software, ensuring that the terms of this license apply to the modified version as well.
