@@ -24,4 +24,4 @@ def on_name_entry(name_entry: tk.Entry, section_var: tk.StringVar, students: dic
 def suggest_names(query: str, section: str, students: dict) -> list:
     """Provides a list of suggested names that are similar to the passed query from the section"""
     student_list = students[section]
-    return [name for name, score in process.extract(query, student_list, limit=12)]
+    return [name for name, score in process.extract(query, student_list, limit=len(student_list))]

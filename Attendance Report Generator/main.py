@@ -153,7 +153,9 @@ name_label = tk.Label(attendance_frame, text="Suggested Names", font=("Arial", h
 name_label.pack(pady=10)
 
 # Listbox for the suggested names
+suggestion_listbox.bind("<Return>", func=lambda _: add_to_attendance(section_var, suggestion_listbox, attendance_listbox, attendance_reports))
 suggestion_listbox.pack(pady=10)
+
 
 # Button used for adding a user to the day's attendance
 add_button = tk.Button(attendance_frame, text="Add to Attendance", command=lambda: add_to_attendance(section_var, suggestion_listbox, attendance_listbox, attendance_reports), font=("Arial", body_font_size_large))
@@ -166,7 +168,9 @@ add_button.pack(pady=10)
 # Listbox for the attendance list
 name_label = tk.Label(list_frame, text="In Attendance", font=("Arial", header_font_size))
 name_label.pack(pady=10)
+attendance_listbox.bind("<Return>", func=lambda _: remove_from_attendance(section_var, attendance_listbox, attendance_reports))
 attendance_listbox.pack(pady=10)
+
 
 # Remove button to delete selected student from attendance list
 remove_button = tk.Button(list_frame, text="Remove Selected", command=lambda: remove_from_attendance(section_var, attendance_listbox, attendance_reports), font=("Arial", body_font_size_large))
